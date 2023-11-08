@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/postLayout"
+        android:layout_width="330dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/layout_bg_itempost"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="-56dp"
+            android:background="@drawable/layout_bg_post">
+
+            <TextView
+                android:id="@+id/titlePost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="122dp"
+                android:layout_marginStart="16dp"
+                android:text="Post Title"
+                android:textColor="@color/text100"
+                android:textSize="@dimen/text_large"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/dateStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/titlePost"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="6dp"
+                android:text="Date"
+                android:textColor="@color/text100" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="@color/primary200"
+                android:text="JOIN"
+                android:textColor="@color/white"
+                app:cornerRadius="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_below="@+id/btn_join"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="4dp"
+                android:text="delete"
+                android:visibility="gone"
+                app:cornerRadius="30dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

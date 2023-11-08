@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg100"
+    android:orientation="vertical"
+    tools:context=".ui.detailguide.DetailGuideActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/layout_bg_header">
+
+        <Button
+            android:id="@+id/btnBack"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            app:icon="@drawable/ic_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="DETAILS GUIDE"
+            android:textColor="@color/text100"
+            android:textSize="@dimen/text_xlarge" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/layout_bg">
+
+            <ImageView
+                android:id="@+id/iv_guideBanner"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/titleGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_guideBanner"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Title Guide"
+                android:textColor="@color/text100"
+                android:textSize="@dimen/text_xlarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleGuide"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Desc"
+                android:textColor="@color/text100"
+                android:textSize="@dimen/text_medium" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

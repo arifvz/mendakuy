@@ -1,0 +1,53 @@
+<!-- list_chat_item.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/bg200">
+
+    <ImageView
+        android:id="@+id/iv_mount"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_default_avatar"
+        android:contentDescription="@string/profile_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@+id/iv_mount"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_groupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text100"
+            android:maxLines="1"
+            android:layout_marginBottom="8dp"
+            android:text="Group Chat"/>
+
+        <TextView
+            android:id="@+id/tv_recentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/text200"
+            android:text="Message"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timestampTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/bg300" />
+
+</RelativeLayout>

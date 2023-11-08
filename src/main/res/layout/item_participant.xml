@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp"
+        android:background="@drawable/layout_bg" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            app:civ_border_width="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profile_pic"
+            android:layout_toStartOf="@+id/tv_status"
+            android:orientation="vertical"
+            android:layout_marginVertical="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/tv_usernamePlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:padding="4dp"
+                android:textColor="@color/text100"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/tv_hiking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_usernamePlayer"
+                android:layout_toEndOf="@id/tv_message"
+                android:padding="4dp"
+                android:textColor="@color/text200"
+                android:text="Times Hiking"
+                android:textSize="@dimen/text_medium" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_usernamePlayer"
+                android:padding="4dp"
+                android:textColor="@color/text200"
+                android:textSize="@dimen/text_medium" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/layout_bg_status_request"
+            android:padding="4dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ll_user"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_decline"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:text="@string/btn_decline"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_btn_decline"
+                />
+
+            <Button
+                android:id="@+id/btn_accept"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginEnd="6dp"
+                android:text="@string/btn_accept"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/ic_btn_accept" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

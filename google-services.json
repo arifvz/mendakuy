@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "684059461779",
+    "project_id": "mendakuy",
+    "storage_bucket": "mendakuy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684059461779:android:e78d49b3fe65d36c552566",
+        "android_client_info": {
+          "package_name": "com.arif.mendakuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684059461779-lvefbe74ujcm5m8jrngu7hmgedku1h8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDufF5WYwqpaGbcdsAuTVhmsWWrOATx2LI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684059461779-lvefbe74ujcm5m8jrngu7hmgedku1h8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

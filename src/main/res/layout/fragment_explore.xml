@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg100"
+    android:orientation="vertical"
+    tools:context=".ui.explore.ExploreFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/layout_bg_header">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="EXPLORE"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_super_large" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@+id/ll_header" />
+
+    <View
+        android:id="@+id/viewMaps"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/mapView"
+        android:background="@color/primary200" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mapView"
+        android:background="@color/primary100"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="location"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/tv_location"
+        android:background="@color/primary200" />
+
+    <LinearLayout
+        android:id="@+id/RL_numberAlti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_location"
+        android:layout_marginBottom="56dp"
+        android:background="@color/bg200"
+        android:orientation="horizontal">
+
+        <!--                        <ImageView-->
+        <!--                            android:layout_width="68dp"-->
+        <!--                            android:layout_height="68dp"-->
+        <!--                            android:layout_alignParentLeft="true"-->
+        <!--                            android:layout_centerVertical="true"-->
+        <!--                            android:src="@mipmap/ic_mountain_foreground"-->
+        <!--                            android:layout_marginVertical="16dp"-->
+        <!--                            android:layout_marginLeft="20dp"/>-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/tv_numberOfAlti"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_centerHorizontal="true"-->
+        <!--                    android:text="0"-->
+        <!--                    android:textColor="@color/text200"-->
+        <!--                    android:textSize="@dimen/text_very_large" />-->
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="6dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Start TRACKING"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="6dp"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="Stop tracking"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+        <!--                        <TextView-->
+        <!--                            android:id="@+id/tv_meter"-->
+        <!--                            android:layout_width="wrap_content"-->
+        <!--                            android:layout_height="wrap_content"-->
+        <!--                            android:text="MDPL"-->
+        <!--                            android:layout_centerHorizontal="true"-->
+        <!--                            android:layout_below="@+id/tv_numberOfAlti"-->
+        <!--                            android:layout_marginBottom="16dp"-->
+        <!--                            android:textStyle="bold"-->
+        <!--                            android:textColor="@color/text200"-->
+        <!--                            />-->
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewAlti"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/RL_numberAlti"
+        android:background="@color/primary200" />
+
+    <LinearLayout
+        android:id="@+id/LL_btnTracking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewAlti"
+        android:background="@color/bg200"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <Button
+            android:id="@+id/btn_sendSMS"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="3dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Send SMS"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewTracking"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@id/LL_btnTracking"
+        android:background="@color/primary200" />
+
+
+</RelativeLayout>
